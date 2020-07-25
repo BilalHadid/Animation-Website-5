@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import avator from "../images/logo2.png";
+import avator from "../images/Logo.png";
 import "../App.css";
 import styled from "styled-components";
 import homeSet from "../images/02.png";
@@ -8,7 +8,7 @@ import useWebAnimation from "@wellyshen/use-web-animations";
 const Nav = styled.nav`
   padding: 0 20px;
   min-height: 9vh;
-  background: #1c2022;
+  background: #ffffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +33,7 @@ const Menu = styled.ul`
 const Item = styled.li``;
 
 const Link = styled.a`
-  color: white;
+  color: black;
   text-decoration: none;
 `;
 
@@ -53,7 +53,7 @@ const Line = styled.span`
   width: 25px;
   height: 3px;
   margin: 5px;
-  background-color: #fff;
+  background-color: black;
   transition: width 0.4s ease-in-out;
   :nth-child(2) {
     width: ${(props) => (props.open ? "40%" : "70%")};
@@ -64,7 +64,7 @@ const Overlay = styled.div`
   position: absolute;
   height: ${(props) => (props.open ? "91vh" : 0)};
   width: 100%;
-  background: #1c2022;
+  background: #fff;
   transition: height 0.4s ease-in-out;
   @media (min-width: 769px) {
     display: none;
@@ -97,7 +97,7 @@ export const Home = () => {
     timing: {
       delay: 500, // Start with a 500ms delay
       duration: 1000, // Run for 1000ms
-      iterations: 5, // Repeat once
+      iterations: Infinity, // Repeat once
       direction: "alternate", // Run the animation forwards and then backwards
       easing: "ease-in-out", // Use a fancy timing function
     },
@@ -107,22 +107,26 @@ export const Home = () => {
     <div className="Home">
       <div>
         <Nav>
-          <Logo>
+          <Logo style={{ cursor: "pointer" }}>
             <img src={avator} alt="Logo" width="70%" height="85vh" />
           </Logo>
           <Menu>
             <Item>
-              <Link target="#" href="">
+              <Link className="hover-2" target="#" href="#">
                 Home
               </Link>
             </Item>
             <Item>
-              <Link target="#" href="">
+              <Link className="hover-2" target="#" href="#">
                 Service
               </Link>
             </Item>
             <Item>
-              <Link target="#" href="https://github.com/bilalhadid">
+              <Link
+                className="hover-2"
+                target="#"
+                href="https://github.com/bilalhadid"
+              >
                 Contact
               </Link>
             </Item>
@@ -137,17 +141,21 @@ export const Home = () => {
         <Overlay open={toggle}>
           <OverlayMenu open={toggle}>
             <Item>
-              <Link target="#" href="https://www.instagram.com/igor_dumencic/">
+              <Link className="hover-2" target="#" href="#">
                 Home
               </Link>
             </Item>
             <Item>
-              <Link target="#" href="https://www.behance.net/igordumencic">
+              <Link className="hover-2" target="#" href="#">
                 Service
               </Link>
             </Item>
             <Item>
-              <Link target="#" href="https://github.com/Igor178">
+              <Link
+                className="hover-2"
+                target="#"
+                href="https://github.com/bilalhadid"
+              >
                 Contact
               </Link>
             </Item>
@@ -156,12 +164,21 @@ export const Home = () => {
       </div>
       <div className="texto">
         <div className="texto1">
-          <h1 style={{ fontSize: "3vw" }}>
-            We deliver digital products & strategies that help you grow
-          </h1>
+          <h3 style={{ fontSize: "1.5vw" }}>We Have 24/7 Support team</h3>
+          <h1 style={{ fontSize: "3vw" }}>Best Software Company Since 2020</h1>
+          <p style={{ fontSize: "1vw" }}>
+            look like readable English. Many desktop publishing packages and web
+            page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their
+            infancy.
+          </p>
           <button className="glow-on-hover" type="button">
             Check out our work
           </button>
+          <div className="Subscribe">
+            <input type="text" placeholder="Inter Your Email Address" />
+            <button className="btnmy">Subscribe</button>
+          </div>
         </div>
 
         <div className="HomeSet">
