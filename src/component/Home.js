@@ -164,8 +164,8 @@ export const Home = () => {
       </div>
       <div className="texto">
         <div className="texto1">
-          <h3 style={{ fontSize: "1.5vw" }}>We Have 24/7 Support team</h3>
-          <h1 style={{ fontSize: "3vw" }}>Best Software Company Since 2020</h1>
+          <h3 style={{ fontSize: "3vh" }}>We Have 24/7 Support team</h3>
+          <h1 style={{ fontSize: "5vh" }}>Best Software Company Since 2020</h1>
           <p style={{ fontSize: "1vw" }}>
             look like readable English. Many desktop publishing packages and web
             page editors now use Lorem Ipsum as their default model text, and a
