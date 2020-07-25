@@ -20,7 +20,7 @@ export const Card = () => {
         </div>
         <div className="card2">
           <img src={img2} alt="g" />
-          <h1>Open An Account</h1>
+          <h1>Give Interest</h1>
           <p>
             You can open bank accounts entirely online, with no need for
             signatures or branch ... you can complete most banking tasks
@@ -30,7 +30,7 @@ export const Card = () => {
         </div>
         <div className="card3">
           <img src={img3} alt="g" />
-          <h1>Open An Account</h1>
+          <h1>Get Deposite</h1>
           <p>
             You can open bank accounts entirely online, with no need for
             signatures or branch ... you can complete most banking tasks

@@ -125,6 +125,7 @@ nav {
   min-width: 80%;
 }
 .texto1 h1 {
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
   text-align: left;
   font-size: bold;
   text-shadow: #2c2c2c 3px 3px 5px;
@@ -322,7 +323,6 @@ a > span:after {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: absolute;
   }
   .card {
     width: 200px;
@@ -471,4 +471,106 @@ a > span:after {
 }
 .GoOn button:hover {
   background-color: #180065;
+}
+.Invest {
+  margin-top: 10%;
+  background-image: url(./images/shape/3.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .Invest .HomeSet {
+    display: none;
+  }
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(./component/font-family/ChunkFive-Regular.otf);
+}
+@font-face {
+  font-family: mysecond;
+  src: url(./component/font-family/PlayfairDisplay-Regular.otf);
+}
+.mainText {
+  min-width: 40%;
+  max-width: 35%;
+  margin-left: 7%;
+}
+.mainText span {
+  font-family: mysecond;
+  color: #ff0072;
+  font-size: xx-large;
+  text-align: start;
+  text-align: left;
+}
+.mainText h2 {
+  color: #180065;
+  font-family: myFirstFont;
+  letter-spacing: 0.1em;
+  font-size: 50px;
+  text-align: left;
+
+  text-shadow: gray 3px 3px 5px;
+}
+.mainText p {
+  color: gray;
+  text-align: left;
+}
+.Sponsor {
+  display: flex;
+  margin-left: 5px;
+}
+.Sponsor Input {
+  padding: 25px;
+  border-radius: 50px 50px;
+  width: 120px;
+  font-family: mysecond;
+  border: gray;
+  box-shadow: 2px 8px 20px #add8e6;
+}
+.Sponsor button {
+  width: 80px;
+  margin-left: 1%;
+  border-radius: 50px 50px;
+  color: white;
+  font-family: mysecond;
+  font-weight: 800;
+  border: none;
+  background-color: #ff0071;
+}
+.Sponsor button:hover {
+  background-color: #180065;
+}
+@media only screen and (max-width: 768px) {
+  .Amound {
+    margin-top: 50%;
+  }
+}
+.Amound {
+  background-image: url(./images/shape/4.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.deposite {
+  background-color: white;
+  max-width: 25%;
+  min-width: 300px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 2px 8px 20px #ddd;
+  margin: 10px;
+  transition: 0.5s linear;
+  cursor: pointer;
 }
