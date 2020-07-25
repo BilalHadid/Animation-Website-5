@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
+import { Home } from "./component/Home";
 
 function App() {
   return (
-    <a href="https://www.freepik.com/free-photos-vectors/background">
-      Background vector created by pikisuperstar - www.freepik.com
-    </a>
+    <div className="App">
+      <Home />
+    </div>
   );
 }
 
