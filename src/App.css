@@ -783,3 +783,226 @@ a > span:after {
   flex-wrap: wrap;
   align-items: center;
 }
+.mainText2 {
+  width: 60%;
+  margin-left: 7%;
+}
+.mainText2 .spna {
+  font-family: mysecond;
+  color: #ff0072;
+  font-size: xx-large;
+  text-align: start;
+  text-align: left;
+}
+.mainText2 h1 {
+  color: #180065;
+  font-family: forth;
+  letter-spacing: 0.1em;
+  font-size: 65px;
+  text-align: left;
+
+  text-shadow: gray 3px 3px 5px;
+}
+.mainText2 p {
+  color: gray;
+  text-align: left;
+}
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.count {
+  width: 15%;
+  margin-right: 15%;
+}
+.count h1 {
+  color: #ff0072;
+}
+.count h1:hover {
+  color: #180065;
+  transition: 1s;
+}
+.History {
+  display: flex;
+}
+.set2 {
+  position: absolute;
+  width: 35%;
+  margin-left: 10%;
+  margin-top: 8%;
+}
+
+.HomeSet2 {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  margin-right: 20%;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .HomeSet2 {
+    display: none;
+  }
+  .counter {
+    display: contents;
+  }
+  .mainText2 {
+    width: 100%;
+  }
+}
+.Calculate {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+  background-image: url(./images/shape/3.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+}
+.calYour button {
+  border-radius: 50px 50px 0px;
+  color: white;
+  background-color: #ff0072;
+  font-family: third;
+  padding: 5%;
+  font-size: x-large;
+  margin-top: -100%;
+  margin-bottom: 10%;
+  display: contain;
+  margin-left: 25%;
+  border: none;
+}
+.calYour {
+  width: 30%;
+  height: 60vh;
+  text-align: left;
+  padding: 5%;
+  margin-left: 5%;
+  margin-bottom: -5%;
+
+  box-shadow: 2px 8px 20px lightgray;
+}
+.calYour label {
+  margin-top: 10%;
+  font-family: forth;
+  font-size: x-large;
+  color: #180065;
+  margin-left: 10%;
+}
+.calYour input {
+  margin-left: 10%;
+  width: 80%;
+  height: 5vh;
+  font-size: large;
+  font-family: mysecond;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+.calYour form {
+  margin-top: 10%;
+}
+.hisText {
+  color: #180065;
+  margin-top: 10%;
+  width: 40%;
+}
+.hisText h1 {
+  font-family: forth;
+  font-size: 7vh;
+  text-align: left;
+}
+.hisText p {
+  text-align: left;
+}
+.hisText img {
+  margin-left: 2%;
+  width: 12%;
+}
+@media only screen and (max-width: 768px) {
+  .Calculate {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+  }
+  .hisText {
+    width: 90%;
+    margin-left: 1.5%;
+    margin-top: 30%;
+  }
+  .calYour {
+    margin-top: 30%;
+    width: 95%;
+    height: 80vh;
+    margin-left: 0%;
+    padding: 0%;
+  }
+}
+.Forest {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(./images/shape/3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+.Forest img {
+  background-color: #f3ffff;
+  padding: 1%;
+  border-radius: 50px 50px 0px;
+
+  box-shadow: 2px 8px 20px lightgray;
+}
+@media only screen and (max-width: 768px) {
+  .Forest {
+    display: contents;
+    align-items: center;
+  }
+  .Forest img {
+    margin-top: 5%;
+  }
+}
+.Footer {
+  background-color: black;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  color: white;
+  display: flex;
+}
+.classic1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.classic1 i {
+  background-color: #fff;
+  border: 1px solid #ff0072;
+  color: #ff0072;
+  height: 40px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 40px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.Contact {
+  text-align: left;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.Contact ul li {
+  list-style-type: none;
+  display: inline;
+  justify-content: space-evenly;
+  margin-left: 5%;
+}
