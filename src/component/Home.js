@@ -4,6 +4,7 @@ import "../App.css";
 import styled from "styled-components";
 import homeSet from "../images/02.png";
 import useWebAnimation from "@wellyshen/use-web-animations";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 const Nav = styled.nav`
   padding: 0 20px;
@@ -44,6 +45,9 @@ const NavIcon = styled.button`
   outline: none;
   @media (min-width: 769px) {
     display: none;
+    .glow-on-hover {
+      display: none;
+    }
   }
 `;
 
@@ -164,21 +168,31 @@ export const Home = () => {
       </div>
       <div className="texto">
         <div className="texto1">
-          <h3 style={{ fontSize: "3vh" }}>We Have 24/7 Support team</h3>
-          <h1 style={{ fontSize: "5vh" }}>Best Software Company Since 2020</h1>
-          <p style={{ fontSize: "1vw" }}>
-            look like readable English. Many desktop publishing packages and web
-            page editors now use Lorem Ipsum as their default model text, and a
-            search for 'lorem ipsum' will uncover many web sites still in their
-            infancy.
-          </p>
-          <button className="glow-on-hover" type="button">
-            Check out our work
-          </button>
-          <div className="Subscribe">
-            <input type="text" placeholder="Inter Your Email Address" />
-            <button className="btnmy">Subscribe</button>
-          </div>
+          <AnimatedOnScroll animationIn="bounceInRight">
+            <h3>We Have 24/7 Support team</h3>
+
+            <h1>
+              Best Software Company<span className="hidden"> Since 2020</span>
+            </h1>
+
+            <p>
+              look like readable English. Many desktop publishing packages and
+              web page editors now use Lorem Ipsum as their default model text,
+              <span className="hidden">
+                {" "}
+                and a search for 'lorem ipsum' will uncover many web sites still
+                in their infancy.
+              </span>
+            </p>
+            <button className="glow-on-hover" type="button">
+              Portfolio
+            </button>
+
+            <div className="Subscribe">
+              <input type="text" placeholder="Inter Your Email Address" />
+              <button className="btnmy">Subscribe</button>
+            </div>
+          </AnimatedOnScroll>
         </div>
 
         <div className="HomeSet">

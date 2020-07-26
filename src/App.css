@@ -97,23 +97,34 @@ nav {
   }
 }
 .texto {
-  max-height: 70vh;
-  max-width: 35%;
-  margin-left: 15%;
-  min-width: 45%;
-  min-height: 40vh;
+  width: 40%;
+  height: 40vh;
   margin-top: 10%;
+  margin-left: 15%;
   display: flex;
   justify-content: center;
 }
 @media only screen and (max-width: 768px) {
-  .texto1 {
-    margin-left: 15%;
-    margin-top: 10%;
-    min-width: 25px;
-    max-width: 100%;
-    min-width: 100%;
+  .texto {
+    width: 74%;
+    height: 50vh;
+    margin-left: 5%;
+    min-height: 50vh;
+    min-width: 40%;
   }
+  .texto1 {
+    width: 100%;
+  }
+  .texto1 h1 {
+    font-size: 7vh;
+  }
+  .texto1 p {
+    font-size: smaller;
+  }
+  .hidden {
+    display: none;
+  }
+
   .texto .HomeSet {
     display: none;
   }
@@ -180,6 +191,7 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 3vh;
+  font-weight: bolder;
 }
 
 .glow-on-hover:before {
@@ -611,4 +623,31 @@ a > span:after {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+}
+.my_table {
+  align-items: center;
+}
+table {
+  border-collapse: collapse;
+  display: contents;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+th {
+  background: #ccc;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background: #efefef;
+}
+
+tr:hover {
+  background: #d1d1d1;
 }

@@ -3,6 +3,7 @@ import img1 from "../images/icons/01.png";
 import img2 from "../images/icons/02.png";
 import img3 from "../images/icons/04.png";
 import "../App.css";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 export const Card = () => {
   return (
@@ -18,6 +19,7 @@ export const Card = () => {
           </p>
           <h2>+</h2>
         </div>
+
         <div className="card2">
           <img src={img2} alt="g" />
           <h1>Give Interest</h1>
@@ -39,10 +41,12 @@ export const Card = () => {
           <h2>+</h2>
         </div>
       </div>
-      <div className="GoOn">
-        <input type="email" placeholder="Inter Your Email Address" />
-        <button className="btngo">GO ON</button>
-      </div>
+      <AnimatedOnScroll animationIn="bounceInRight">
+        <div className="GoOn">
+          <input type="email" placeholder="Inter Your Email Address" />
+          <button className="btngo">GO ON</button>
+        </div>
+      </AnimatedOnScroll>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 
 export const Transaction = () => {
   return (
@@ -15,7 +16,7 @@ export const Transaction = () => {
           Ipsum as their default model text, and a search for 'lore
         </p>
       </div>
-      <div className="MainTransaction">Hello</div>
+      <div className="MainTransaction"></div>
     </div>
   );
 };

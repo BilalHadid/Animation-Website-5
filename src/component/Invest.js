@@ -38,6 +38,7 @@ export const Invest = () => {
           <button>Sponsor</button>
         </div>
       </div>
+
       <div className="HomeSet">
         <img className="set" src={Avator} alt="g" ref={ref} />
       </div>
