@@ -596,6 +596,7 @@ a > span:after {
 }
 .Transaction {
   margin-top: 10%;
+  display: flex;
 }
 @media only screen and (max-width: 768px) {
   .Transaction {
@@ -606,48 +607,108 @@ a > span:after {
 .itText h1 span {
   color: #ff0071;
   font-family: mysecond;
-  font-size: 3.5vh;
+  font-size: 5vh;
 }
 .itText h1 {
   color: #180065;
   font-family: myFirstFont;
-  font-size: 4hv;
+  font-size: 8vh;
 }
 .itText p {
   color: #180065;
 }
-.MainTransaction {
+.profit {
   margin-top: 10%;
-  background-image: url(./images/partner/table-bg-1.png);
-  background-position: center;
+  background-image: url(./images/shape/5.png);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100vh;
 }
-.my_table {
-  align-items: center;
+
+.Allcardo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
 }
-table {
-  border-collapse: collapse;
-  display: contents;
+.Cardo {
+  height: 35vh;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  box-shadow: 2px 8px 20px #ddd;
+  margin: 1%;
+}
+.cardoImg p {
+  background-color: #3c00bb;
+  color: white;
+  padding: 6px;
+  margin-top: -0px;
+  border-radius: 50px 0px 1px 1px;
+  font-size: 2vh;
+}
+.cardoImg img {
+  border: 1px solid lightgray;
+  padding: 10%;
+  margin-top: 30%;
+  margin-left: 50%;
+}
+@font-face {
+  src: url(./component/font-family/PlayfairDisplay-Bold.otf);
+  font-family: third;
+}
+.portfitable {
+  font-family: third;
+  color: #342871;
+  text-align: left;
+  margin-left: 10%;
+  padding: 10px;
+}
+.portfitable h1 {
+  color: #2b2b2b;
+  font-size: 4vh;
+}
+.profit {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+  margin-right: 20%;
+}
+.set1 {
+  position: absolute;
+  width: 35%;
+  margin-left: 10%;
+  margin-top: 1%;
+}
+
+.HomeSet1 {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  margin-right: 20%;
   justify-content: center;
-  width: 90%;
 }
-th {
-  background: #ccc;
+@media only screen and (max-width: 868px) {
+  .profit {
+    margin-top: 100%;
+  }
+  .Allcardo {
+    width: 100%;
+  }
+  .HomeSet1 {
+    display: none;
+  }
 }
-
-th,
-td {
-  border: 1px solid #ccc;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background: #efefef;
-}
-
-tr:hover {
-  background: #d1d1d1;
+@media only screen and (max-width: 768px) {
+  .profit {
+    margin-top: 200%;
+  }
+  .Allcardo {
+    width: 100%;
+  }
+  .HomeSet1 {
+    display: none;
+  }
 }
