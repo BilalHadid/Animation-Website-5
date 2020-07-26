@@ -692,13 +692,10 @@ a > span:after {
 }
 @media only screen and (max-width: 868px) {
   .profit {
-    margin-top: 100%;
+    margin-top: 50%;
   }
   .Allcardo {
-    width: 100%;
-  }
-  .HomeSet1 {
-    display: none;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -711,4 +708,78 @@ a > span:after {
   .HomeSet1 {
     display: none;
   }
+}
+@font-face {
+  src: url(./component/font-family/Bebas-Regular.ttf);
+  font-family: forth;
+}
+#newText {
+  margin-top: 10%;
+}
+.mainText1 {
+  min-width: 60%;
+  max-width: 35%;
+  margin-left: 7%;
+}
+.mainText1 span {
+  font-family: mysecond;
+  color: #ff0072;
+  font-size: xx-large;
+  text-align: start;
+  text-align: left;
+}
+.mainText1 h1 {
+  color: #180065;
+  font-family: forth;
+  letter-spacing: 0.1em;
+  font-size: 65px;
+  text-align: left;
+
+  text-shadow: gray 3px 3px 5px;
+}
+.mainText1 p {
+  color: gray;
+  text-align: left;
+}
+.client {
+  width: 250px;
+  padding: 2%;
+  border-radius: 60px 60px;
+  font-family: third;
+  color: #180065;
+}
+.client i {
+  background-color: #fff;
+  border: 1px solid #ff0072;
+  color: #ff0072;
+  height: 40px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 40px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.client i:hover {
+  border: white;
+  box-shadow: 2px 8px 20px gray;
+  transition: 1s;
+}
+.classic {
+  display: flex;
+  justify-content: space-evenly;
+}
+.client:hover {
+  background-color: white;
+  transition: 0.5s;
+  box-shadow: 2px 8px 20px #ddd;
+}
+.investorCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }

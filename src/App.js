@@ -5,6 +5,7 @@ import { Card } from "./component/card";
 import { Invest } from "./component/Invest";
 import { Amound } from "./component/Amound";
 import { Transaction } from "./component/transaction";
+import { Investor } from "./component/investor";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <br />
         <Amound />
         <Transaction />
+        <Investor />
       </div>
     </div>
   );
