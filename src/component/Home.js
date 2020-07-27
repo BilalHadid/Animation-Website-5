@@ -45,9 +45,6 @@ const NavIcon = styled.button`
   outline: none;
   @media (min-width: 769px) {
     display: none;
-    .glow-on-hover {
-      display: none;
-    }
   }
 `;
 
@@ -65,7 +62,6 @@ const Line = styled.span`
 `;
 
 const Overlay = styled.div`
-  position: absolute;
   height: ${(props) => (props.open ? "91vh" : 0)};
   width: 100%;
   background: #fff;
@@ -107,6 +103,7 @@ export const Home = () => {
     },
   });
   const [toggle, toggleNav] = useState(false);
+
   return (
     <div className="Home">
       <div>
