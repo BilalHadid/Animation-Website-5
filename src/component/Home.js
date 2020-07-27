@@ -155,11 +155,7 @@ export const Home = () => {
               </Link>
             </Item>
             <Item>
-              <Link
-                className="hover-2"
-                target="#"
-                href="https://github.com/bilalhadid"
-              >
+              <Link className="hover-2" href="https://github.com/bilalhadid">
                 Contact
               </Link>
             </Item>
